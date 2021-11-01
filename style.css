@@ -1,0 +1,22 @@
+#container {
+  display: flex;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  /* gap: 1em; */
+}
+
+.tiles {
+  height: 100px;
+  width: 100px;
+}
+
+.gameButton {
+  height: 100px;
+  width: 100px;
+}
