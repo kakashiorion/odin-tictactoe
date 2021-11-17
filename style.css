@@ -1,5 +1,32 @@
+body {
+  margin: 0;
+}
+
+#reset {
+  color: brown;
+  width: 128px;
+  height: 64px;
+  font-size: 24px;
+  background-color: beige;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #container {
   display: flex;
+  justify-content: center;
+}
+
+#players {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  width: min(600px, 60%);
+  font-size: 3vh;
 }
 
 #gameBoard {
@@ -7,8 +34,25 @@
   grid-template-columns: repeat(3, 1fr);
   height: 300px;
   width: 300px;
+}
+
+#result {
+  display: flex;
+  margin: 10px auto;
   justify-content: center;
-  /* gap: 1em; */
+}
+
+#resultText {
+  font-size: 6vh;
+  color: rebeccapurple;
+}
+
+#next {
+  display: none;
+}
+
+.score div {
+  display: inline-block;
 }
 
 .tiles {
@@ -19,4 +63,6 @@
 .gameButton {
   height: 100px;
   width: 100px;
+  justify-content: center;
+  font-size: 60px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,20 +8,46 @@
     <title>TicTacToe</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="header"></div>
-    <div id="container">
-        <div id="gameBoard">
-        <div id="t1" class="tiles"><button id="b1" class="gameButton"></button></div>
-        <div id="t2" class="tiles"><button id="b2" class="gameButton"></button></div>
-        <div id="t3" class="tiles"><button id="b3" class="gameButton"></button></div>
-        <div id="t4" class="tiles"><button id="b4" class="gameButton"></button></div>
-        <div id="t5" class="tiles"><button id="b5" class="gameButton"></button></div>
-        <div id="t6" class="tiles"><button id="b6" class="gameButton"></button></div>
-        <div id="t7" class="tiles"><button id="b7" class="gameButton"></button></div>
-        <div id="t8" class="tiles"><button id="b8" class="gameButton"></button></div>
-        <div id="t9" class="tiles"><button id="b9" class="gameButton"></button></div>
+    <button id="reset">
+        RESET
+    </button>
+    <div id="players">
+        <div id="p1Name" class="names">
+            Player 1 (X)
+            <div id="p1Score" class="score">
+                Score:
+                <div id="p1ScoreText">0</div>
+            </div>
+        </div>
+        <div id="p2Name" class="names">
+            Player 2 (O)
+            <div id="p2Score" class="score">
+                Score:
+                <div id="p2ScoreText">0</div>
+
+            </div>
         </div>
     </div>
+    <div id="container">
+        <div id="gameBoard">
+            <div id="t1" class="tiles"><button id="b1" class="gameButton"> </button></div>
+            <div id="t2" class="tiles"><button id="b2" class="gameButton"> </button></div>
+            <div id="t3" class="tiles"><button id="b3" class="gameButton"> </button></div>
+            <div id="t4" class="tiles"><button id="b4" class="gameButton"> </button></div>
+            <div id="t5" class="tiles"><button id="b5" class="gameButton"> </button></div>
+            <div id="t6" class="tiles"><button id="b6" class="gameButton"> </button></div>
+            <div id="t7" class="tiles"><button id="b7" class="gameButton"> </button></div>
+            <div id="t8" class="tiles"><button id="b8" class="gameButton"> </button></div>
+            <div id="t9" class="tiles"><button id="b9" class="gameButton"> </button></div>
+        </div>
+    </div>
+    <div id="result">
+        <div id="resultText"></div>
+        <button id="next">OK</button>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
